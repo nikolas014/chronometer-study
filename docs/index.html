@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>chronometer app</title>
+</head>
+<body>
+    <div class="modal hidden" id="modal">
+        <a class="btn-close">x</a>
+        <span>¿Deseas seguir estudiando? </span>
+        <Button id="btn-yes">Sí</Button>
+        <Button id="btn-not">No</Button>
+    </div>
+
+    <div class="c-body" id="content">
+        <div class="c-time" id="Timer">
+            <div class="screen">
+                <span id="time">00:00:00</span>
+            </div>  
+            <div class="c-btn">               
+               <button id="btn-start">&#9658;</button>
+               <button id="btn-stop">&#8718;</button>
+               <button id="btn-reset">&#8635;</button>
+            </div>          
+        </div>
+        
+        <button onclick="reproducir()" hidden id="btn-reproducir" >reproducir</button>
+    </div>
+
+    
+
+    <script src="time.js"></script>
+</body>
+</html>
